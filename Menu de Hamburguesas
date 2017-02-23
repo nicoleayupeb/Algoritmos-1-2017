@@ -1,0 +1,57 @@
+// mayor_18.cpp : Defines the entry point for the console application.
+// Autor: Nicole Ayupe Bascope
+// Fecha: 22/02/2017
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "math.h"
+#define HAM 3
+#define HAMC 2
+#define PF 2
+#define SD 2.5
+#define MAL 4
+
+using namespace std;
+
+void main()
+{
+    float acum=0,a;
+
+        cout<<"Bienvenido a Hamburguesas bk permitanos tomar su orden...:"<<endl;
+        cout<<"Desea pedir una hamburguesa si=1, no=2?"<<endl;
+        cin>>a;
+        if (a==1)
+            acum=acum+HAM;
+        else
+            acum=acum;
+        cout<<"Desea agregarle queso si=1, no=2?"<<endl;
+        cin>>a;
+        if (a==1)
+            acum=acum+HAMC;
+        else
+            acum=acum;
+        cout<<"Desea papas si=1, no=2"<<endl;
+        cin>> a;
+        if(a==1)
+            acum=acum+PF;
+        else
+            acum=acum;
+        cout<<"Desea malteadas? si=1,no=2"<<endl;
+        cin>>a;
+        if(a==1)
+            acum=acum+MAL;
+        else
+            acum=acum;
+        cout<<"Desea soda si=1,no=2?"<<endl;
+		cin>>a;
+        if(a==1)
+            acum=acum+SD;
+        else
+            acum=acum;
+
+
+        cout<<"su cuenta es: "<<acum<<"Bs"<<endl;
+
+        getch();
+}
